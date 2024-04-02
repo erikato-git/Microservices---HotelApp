@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using HotelApp.Services.HotelAPI.Data;
 using HotelApp.Services.HotelAPI.DTOs;
+using HotelApp.Services.HotelAPI.Interfaces;
+using HotelApp.Services.HotelAPI.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,39 +12,29 @@ namespace HotelApp.Services.HotelAPI.Controllers
     [ApiController]
     public class HotelAPIController : ControllerBase
     {
-        private readonly AppDbContext _db;
         private ResponseDTO _response;
+        private IHotelRepository _hotelRepository;
         private IMapper _mapper;
 
-        public HotelAPIController(AppDbContext db, IMapper mapper)
+        public HotelAPIController(IMapper mapper, IHotelRepository hotelRepository)
         {
-            _db = db;
+            _hotelRepository = hotelRepository; 
             _response = new ResponseDTO();
             _mapper = mapper;
         }
 
         [HttpGet]
-        [Route("{id:string}")]
-        public object GetHotelById(string id)
+        [Route("{id:Guid}")]
+        public async Task<IActionResult> GetHotelById(Guid id)
         {
-            // [2] Look at how Neil handles guids for GetById-requests
+            var result = await _hotelRepository.GetHotelById(id);
 
-            try
+            if(result.IsSucces)
             {
-                // call to db
-                //_response.Result = _mapper.Map < "DisplayDTO" > ("database-obj");
-
-                // for lists:
-                //_response.Result = _mapper.Map <IEnumerable<"DisplayDTO">> ("database-obj");
-
-            }
-            catch (Exception ex)
-            {
-                _response.IsSucces = false;
-                _response.Message = ex.Message;
+                return Ok(result.Result);
             }
 
-            return _response;
+            return BadRequest(result.Message);
         }
     }
 }
