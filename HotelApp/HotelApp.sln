@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{26D86B33-4731-4D18-838A-DC6CA9CF5926}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{5C44DB6C-4F24-4D1D-B47F-6775D259542F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{A2E626CA-BFAD-4BFE-9791-D34B395C0BD8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{3F2EBA70-501F-4519-85C2-282719786531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelApp.Services.HotelAPI", "HotelApp.Services.HotelAPI\HotelApp.Services.HotelAPI.csproj", "{C72FE45F-7486-4B7D-8096-9D0D38294DB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelApp.Services.HotelSearchAPI", "HotelApp.Services.HotelSearchAPI\HotelApp.Services.HotelSearchAPI.csproj", "{B01C807D-F634-4103-8243-532DF106F10F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C72FE45F-7486-4B7D-8096-9D0D38294DB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C72FE45F-7486-4B7D-8096-9D0D38294DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C72FE45F-7486-4B7D-8096-9D0D38294DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C72FE45F-7486-4B7D-8096-9D0D38294DB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B01C807D-F634-4103-8243-532DF106F10F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B01C807D-F634-4103-8243-532DF106F10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B01C807D-F634-4103-8243-532DF106F10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B01C807D-F634-4103-8243-532DF106F10F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C72FE45F-7486-4B7D-8096-9D0D38294DB0} = {3F2EBA70-501F-4519-85C2-282719786531}
+		{B01C807D-F634-4103-8243-532DF106F10F} = {3F2EBA70-501F-4519-85C2-282719786531}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A7F74E3-6AC7-4609-9D95-0257E03CB700}
+	EndGlobalSection
+EndGlobal
