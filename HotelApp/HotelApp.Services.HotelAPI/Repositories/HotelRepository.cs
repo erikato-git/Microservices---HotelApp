@@ -42,6 +42,7 @@ namespace HotelApp.Services.HotelAPI.Repositories
             }
             catch (Exception ex)
             {
+                // [4] Consider to put in logger here
                 _response.Message = ex.Message;
             }
 

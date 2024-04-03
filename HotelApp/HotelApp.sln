@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{3F2EBA70-501F-4519-85C2-282719786531}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelApp.Services.HotelAPI", "HotelApp.Services.HotelAPI\HotelApp.Services.HotelAPI.csproj", "{C72FE45F-7486-4B7D-8096-9D0D38294DB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelApp.Services.HotelAPI", "HotelApp.Services.HotelAPI\HotelApp.Services.HotelAPI.csproj", "{C72FE45F-7486-4B7D-8096-9D0D38294DB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelApp.Services.HotelSearchAPI", "HotelApp.Services.HotelSearchAPI\HotelApp.Services.HotelSearchAPI.csproj", "{B01C807D-F634-4103-8243-532DF106F10F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelApp.Services.HotelSearchAPI", "HotelApp.Services.HotelSearchAPI\HotelApp.Services.HotelSearchAPI.csproj", "{B01C807D-F634-4103-8243-532DF106F10F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

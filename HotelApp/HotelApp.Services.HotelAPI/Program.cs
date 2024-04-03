@@ -41,7 +41,14 @@ app.UseAuthorization();
 app.MapControllers();
 
 
-// [1] Seed like Neil
-
+try
+{
+    DbInitializer.InitDb(app);
+}
+catch (Exception ex)
+{
+    // [5] Apply loggin
+    Console.WriteLine(ex.Message);
+}
 
 app.Run();
