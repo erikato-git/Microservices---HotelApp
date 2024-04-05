@@ -2,7 +2,7 @@
 
 namespace HotelApp.Services.HotelSearchAPI.DTOs
 {
-    public class SearchCriteriaInput
+    public class SearchInput
     {
         [Required]
         public int NumberOfPersons { get; set; }

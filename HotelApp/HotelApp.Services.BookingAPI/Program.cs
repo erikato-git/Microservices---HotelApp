@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetValue<string>("ConnectionStrings:DefaultConnection"));
+    options.UseSqlServer(builder.Configuration["ConnectionStrings:DefaultConnection"]);
 });
 
 // [3.1] Neil's implementation would maybe override this
