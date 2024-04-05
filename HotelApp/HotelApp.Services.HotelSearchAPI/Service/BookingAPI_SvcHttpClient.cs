@@ -15,19 +15,19 @@ namespace HotelApp.Services.HotelSearchAPI.Service
             _httpClientFactory = httpClientFactory;
         }
 
-        public async Task<IEnumerable<Booking>> GetHotelsByCountry(string country)
+        public async Task<IEnumerable<Booking>> GetBookingsByCountry(string country)
         {
             var client = _httpClientFactory.CreateClient("BookingAPI");
-            var httpResponse = await client.GetAsync("$/api/BookingAPI/GetHotelsByCountry/" + country);
+            var httpResponse = await client.GetAsync("api/Bookings/GetHotelsByCountry/" + country);
             var apiContent = await httpResponse.Content.ReadAsStringAsync();
-            var response = JsonConvert.DeserializeObject<ResponseDTO>(apiContent);
-
-            if (response == null || !response.IsSucces)
+            var response = JsonConvert.DeserializeObject<IEnumerable<Booking>>(Convert.ToString(apiContent));
+            if(response == null)
             {
-                return new List<Booking>();   // empty list
+                return new List<Booking>(); // empty list
             }
 
-            return JsonConvert.DeserializeObject<IEnumerable<Booking>>(Convert.ToString(response.Result));
+            return response;
+
         }
     }
 }

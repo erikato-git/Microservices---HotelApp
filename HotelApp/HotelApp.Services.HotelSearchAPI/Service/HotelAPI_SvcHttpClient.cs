@@ -18,16 +18,15 @@ namespace HotelApp.Services.HotelSearchAPI.Service
         public async Task<IEnumerable<Hotel>> GetHotelsByCountry(string country)
         {
             var client = _httpClientFactory.CreateClient("HotelAPI");
-            var httpResponse = await client.GetAsync("$/api/HotelAPI/GetHotelsByCountry/" + country);
+            var httpResponse = await client.GetAsync("api/HotelAPI/GetHotelsByCountry/" + country);
             var apiContent = await httpResponse.Content.ReadAsStringAsync();
-            var response = JsonConvert.DeserializeObject<ResponseDTO>(apiContent);
-
-            if (response == null || !response.IsSucces)
+            var response = JsonConvert.DeserializeObject<IEnumerable<Hotel>>(Convert.ToString(apiContent));
+            if (response == null)
             {
-                return new List<Hotel>();   // empty list
+                return new List<Hotel>(); // empty list
             }
 
-            return JsonConvert.DeserializeObject<IEnumerable<Hotel>>(Convert.ToString(response.Result));
+            return response;
         }
     }
 }
