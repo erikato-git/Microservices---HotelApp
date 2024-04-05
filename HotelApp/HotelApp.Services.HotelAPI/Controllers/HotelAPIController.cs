@@ -14,13 +14,11 @@ namespace HotelApp.Services.HotelAPI.Controllers
     {
         private ResponseDTO _response;
         private IHotelRepository _hotelRepository;
-        private IMapper _mapper;
 
-        public HotelAPIController(IMapper mapper, IHotelRepository hotelRepository)
+        public HotelAPIController(IHotelRepository hotelRepository)
         {
             _hotelRepository = hotelRepository; 
             _response = new ResponseDTO();
-            _mapper = mapper;
         }
 
         [HttpGet]
@@ -36,5 +34,20 @@ namespace HotelApp.Services.HotelAPI.Controllers
 
             return BadRequest(result.Message);
         }
+
+        [HttpGet]
+        [Route("GetHotelsByCountry/{country}")]
+        public async Task<IActionResult> GetHotelsByCountry(string country)
+        {
+            var result = await _hotelRepository.GetHotelsByCountry(country);
+
+            if (result.IsSucces)
+            {
+                return Ok(result.Result);
+            }
+
+            return BadRequest(result.Message);
+        }
+
     }
 }
