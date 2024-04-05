@@ -285,9 +285,122 @@ namespace HotelApp.Services.HotelAPI.Data
                     }
                 },
 
+                new Hotel
+                {
+                    Id = Guid.Parse("bcc20b49-e728-46cf-89e3-afa79e297d74"),
+                    HotelName = "Hotel Eiffel",
+                    HotelAddress = "Champs Elysees1",
+                    Country = "France",
+                    City = "Paris",
+                    Stars = 5,
+                    Rooms = new List<Room>
+                    {
+                        new Room
+                        {
+                            Id = Guid.Parse("5d3eafe0-1392-4056-be3b-74d6a6298316"),
+                            RoomType = "SingleRoom",
+                            Bed = new Bed
+                            {
+                                Id = Guid.Parse("ab9ea72f-50ef-4c94-b6a8-356bfc6cc816"),
+                                BedType = "SingleBed",
+                                PricePrNight = 250.0,
+                                PeopleCapacity = 1
+                            },
+                            AmountOfBeds = 1
+                        },
+                        new Room
+                        {
+                            Id = Guid.Parse("5d3eafe0-1392-4056-be3b-74d6a6298317"),
+                            RoomType = "SingleRoom",
+                            Bed = new Bed
+                            {
+                                Id = Guid.Parse("ab9ea72f-50ef-4c94-b6a8-356bfc6cc817"),
+                                BedType = "SingleBed",
+                                PricePrNight = 250.0,
+                                PeopleCapacity = 1
+                            },
+                            AmountOfBeds = 1
+                        },
+                        new Room
+                        {
+                            Id = Guid.Parse("5d3eafe0-1392-4056-be3b-74d6a6298318"),
+                            RoomType = "DoubleRoom",
+                            Bed = new Bed
+                            {
+                                Id = Guid.Parse("ab9ea72f-50ef-4c94-b6a8-356bfc6cc818"),
+                                BedType = "DoubleBed",
+                                PricePrNight = 450.0,
+                                PeopleCapacity = 2
+                            },
+                            AmountOfBeds = 1
+                        },
+                        new Room
+                        {
+                            Id = Guid.Parse("5d3eafe0-1392-4056-be3b-74d6a6298319"),
+                            RoomType = "DoubleRoom",
+                            Bed = new Bed
+                            {
+                                Id = Guid.Parse("ab9ea72f-50ef-4c94-b6a8-356bfc6cc819"),
+                                BedType = "DoubleBed",
+                                PricePrNight = 450.0,
+                                PeopleCapacity = 2
+                            },
+                            AmountOfBeds = 1
+                        }
+                    }
+                },
 
-
-
+                new Hotel
+                {
+                    Id = Guid.Parse("bcc20b49-e728-46cf-89e3-afa79e297d75"),
+                    HotelName = "Generator Barcelona",
+                    HotelAddress = "La Rambla 1",
+                    Country = "Spain",
+                    City = "Barcelona",
+                    Stars = 3,
+                    Rooms = new List<Room>
+                    {
+                        new Room
+                        {
+                            Id = Guid.Parse("5d3eafe0-1392-4056-be3b-74d6a6298320"),
+                            RoomType = "Dormitory",
+                            Bed = new Bed
+                            {
+                                Id = Guid.Parse("ab9ea72f-50ef-4c94-b6a8-356bfc6cc820"),
+                                BedType = "Bunk",
+                                PricePrNight = 120.0,
+                                PeopleCapacity = 1
+                            },
+                            AmountOfBeds = 6
+                        },
+                        new Room
+                        {
+                            Id = Guid.Parse("5d3eafe0-1392-4056-be3b-74d6a6298321"),
+                            RoomType = "Dormitory",
+                            Bed = new Bed
+                            {
+                                Id = Guid.Parse("ab9ea72f-50ef-4c94-b6a8-356bfc6cc821"),
+                                BedType = "Bunk",
+                                PricePrNight = 100.0,
+                                PeopleCapacity = 1
+                            },
+                            AmountOfBeds = 6
+                        },
+                        new Room
+                        {
+                            Id = Guid.Parse("5d3eafe0-1392-4056-be3b-74d6a6298322"),
+                            RoomType = "Dormitory",
+                            Bed = new Bed
+                            {
+                                Id = Guid.Parse("ab9ea72f-50ef-4c94-b6a8-356bfc6cc822"),
+                                BedType = "Bunk",
+                                PricePrNight = 80.0,
+                                PeopleCapacity = 1
+                            },
+                            AmountOfBeds = 6
+                        }
+                    }
+                },
 
             };
 

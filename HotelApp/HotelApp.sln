@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelApp.Services.HotelAPI"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelApp.Services.HotelSearchAPI", "HotelApp.Services.HotelSearchAPI\HotelApp.Services.HotelSearchAPI.csproj", "{B01C807D-F634-4103-8243-532DF106F10F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelApp.Services.BookingAPI", "HotelApp.Services.BookingAPI\HotelApp.Services.BookingAPI.csproj", "{C3FECFE6-EB04-49A6-BAC1-C30263F77798}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{B01C807D-F634-4103-8243-532DF106F10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B01C807D-F634-4103-8243-532DF106F10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B01C807D-F634-4103-8243-532DF106F10F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3FECFE6-EB04-49A6-BAC1-C30263F77798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3FECFE6-EB04-49A6-BAC1-C30263F77798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3FECFE6-EB04-49A6-BAC1-C30263F77798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3FECFE6-EB04-49A6-BAC1-C30263F77798}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C72FE45F-7486-4B7D-8096-9D0D38294DB0} = {3F2EBA70-501F-4519-85C2-282719786531}
 		{B01C807D-F634-4103-8243-532DF106F10F} = {3F2EBA70-501F-4519-85C2-282719786531}
+		{C3FECFE6-EB04-49A6-BAC1-C30263F77798} = {3F2EBA70-501F-4519-85C2-282719786531}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2A7F74E3-6AC7-4609-9D95-0257E03CB700}
