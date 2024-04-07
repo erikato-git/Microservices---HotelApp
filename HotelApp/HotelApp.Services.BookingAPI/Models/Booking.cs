@@ -18,8 +18,8 @@ namespace HotelApp.Services.BookingAPI.Models
         public string? CustomerAddress { get; set; }
         public required string CustomerFullName { get; set; }
         public required string OrderRoomsTextString { get; set; }
-        public required DateTime CheckInDate { get; set; }
-        public required DateTime CheckOutDate { get; set; }
+        public required DateOnly CheckInDate { get; set; }
+        public required DateOnly CheckOutDate { get; set; }
         public List<string>? RoomIds { get; set;}
 
     }

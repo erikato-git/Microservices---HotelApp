@@ -3,6 +3,7 @@ using Azure;
 using HotelApp.Services.BookingAPI.Data;
 using HotelApp.Services.BookingAPI.DTOs;
 using HotelApp.Services.BookingAPI.Interface;
+using Microsoft.EntityFrameworkCore;
 
 namespace HotelApp.Services.BookingAPI.Repositories
 {

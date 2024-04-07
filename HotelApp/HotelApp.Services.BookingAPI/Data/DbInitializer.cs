@@ -28,7 +28,7 @@ namespace HotelApp.Services.BookingAPI.Data
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27801"),
-                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7e",
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d70",
                     HotelName = "Donwtown Hostel",
                     HotelAddress = "Istedgade 1",
                     HotelCountry = "Denmark",
@@ -43,14 +43,14 @@ namespace HotelApp.Services.BookingAPI.Data
                         "5d3eafe0-1392-4056-be3b-74d6a62983d0",
                         "5d3eafe0-1392-4056-be3b-74d6a62983d1"
                     },
-                    CheckInDate = new DateTime(2024, 6, 1),
-                    CheckOutDate = new DateTime(2024, 7, 1)
+                    CheckInDate = new DateOnly(2024, 6, 1),
+                    CheckOutDate = new DateOnly(2024, 7, 1)
                 },
 
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27802"),
-                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7e",
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d70",
                     HotelName = "Donwtown Hostel",
                     HotelAddress = "Istedgade 1",
                     HotelCountry = "Denmark",
@@ -65,14 +65,14 @@ namespace HotelApp.Services.BookingAPI.Data
                         "5d3eafe0-1392-4056-be3b-74d6a62983d2",
                         "5d3eafe0-1392-4056-be3b-74d6a62983d3"
                     },
-                    CheckInDate = new DateTime(2024, 7, 1),
-                    CheckOutDate = new DateTime(2024, 8, 1)
+                    CheckInDate = new DateOnly(2024, 7, 1),
+                    CheckOutDate = new DateOnly(2024, 8, 1)
                 },
 
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27803"),
-                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7e",
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d70",
                     HotelName = "Donwtown Hostel",
                     HotelAddress = "Istedgade 1",
                     HotelCountry = "Denmark",
@@ -86,15 +86,15 @@ namespace HotelApp.Services.BookingAPI.Data
                     {
                         "5d3eafe0-1392-4056-be3b-74d6a62983d4"
                     },
-                    CheckInDate = new DateTime(2024, 8, 1),
-                    CheckOutDate = new DateTime(2024, 9, 1)
+                    CheckInDate = new DateOnly(2024, 8, 1),
+                    CheckOutDate = new DateOnly(2024, 9, 1)
                 },
 
 
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27804"),
-                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7f",
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d71",
                     HotelName = "The Ritz London",
                     HotelAddress = "PICCADILLY 1",
                     HotelCountry = "England",
@@ -109,14 +109,14 @@ namespace HotelApp.Services.BookingAPI.Data
                         "5d3eafe0-1392-4056-be3b-74d6a62983d5",
                         "5d3eafe0-1392-4056-be3b-74d6a62983d6"
                     },
-                    CheckInDate = new DateTime(2024, 6, 1),
-                    CheckOutDate = new DateTime(2024, 7, 1)
+                    CheckInDate = new DateOnly(2024, 6, 1),
+                    CheckOutDate = new DateOnly(2024, 7, 1)
                 },
 
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27805"),
-                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7f",
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d71",
                     HotelName = "The Ritz London",
                     HotelAddress = "PICCADILLY 1",
                     HotelCountry = "England",
@@ -131,14 +131,14 @@ namespace HotelApp.Services.BookingAPI.Data
                         "5d3eafe0-1392-4056-be3b-74d6a62983d7",
                         "5d3eafe0-1392-4056-be3b-74d6a62983d8"
                     },
-                    CheckInDate = new DateTime(2024, 7, 1),
-                    CheckOutDate = new DateTime(2024, 8, 1)
+                    CheckInDate = new DateOnly(2024, 7, 1),
+                    CheckOutDate = new DateOnly(2024, 8, 1)
                 },
 
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27806"),
-                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7f",
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d71",
                     HotelName = "The Ritz London",
                     HotelAddress = "PICCADILLY 1",
                     HotelCountry = "England",
@@ -153,15 +153,15 @@ namespace HotelApp.Services.BookingAPI.Data
                         "5d3eafe0-1392-4056-be3b-74d6a62983d0",
                         "5d3eafe0-1392-4056-be3b-74d6a62983d1"
                     },
-                    CheckInDate = new DateTime(2024, 8, 1),
-                    CheckOutDate = new DateTime(2024, 9, 1)
+                    CheckInDate = new DateOnly(2024, 8, 1),
+                    CheckOutDate = new DateOnly(2024, 9, 1)
                 },
 
 
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27807"),
-                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7g",
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d72",
                     HotelName = "Cabinn City",
                     HotelAddress = "Kreuzberg 1",
                     HotelCountry = "Germany",
@@ -176,14 +176,14 @@ namespace HotelApp.Services.BookingAPI.Data
                         "5d3eafe0-1392-4056-be3b-74d6a62983d9",
                         "5d3eafe0-1392-4056-be3b-74d6a6298310"
                     },
-                    CheckInDate = new DateTime(2024, 6, 1),
-                    CheckOutDate = new DateTime(2024, 7, 1)
+                    CheckInDate = new DateOnly(2024, 6, 1),
+                    CheckOutDate = new DateOnly(2024, 7, 1)
                 },
 
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27808"),
-                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7g",
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d72",
                     HotelName = "Cabinn City",
                     HotelAddress = "Kreuzberg 1",
                     HotelCountry = "Germany",
@@ -198,14 +198,14 @@ namespace HotelApp.Services.BookingAPI.Data
                         "5d3eafe0-1392-4056-be3b-74d6a62983d9",
                         "5d3eafe0-1392-4056-be3b-74d6a6298310"
                     },
-                    CheckInDate = new DateTime(2024, 7, 1),
-                    CheckOutDate = new DateTime(2024, 8, 1)
+                    CheckInDate = new DateOnly(2024, 7, 1),
+                    CheckOutDate = new DateOnly(2024, 8, 1)
                 },
 
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27809"),
-                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7g",
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d72",
                     HotelName = "Cabinn City",
                     HotelAddress = "Kreuzberg 1",
                     HotelCountry = "Germany",
@@ -220,15 +220,15 @@ namespace HotelApp.Services.BookingAPI.Data
                         "5d3eafe0-1392-4056-be3b-74d6a62983d9",
                         "5d3eafe0-1392-4056-be3b-74d6a6298310"
                     },
-                    CheckInDate = new DateTime(2024, 8, 1),
-                    CheckOutDate = new DateTime(2024, 9, 1)
+                    CheckInDate = new DateOnly(2024, 8, 1),
+                    CheckOutDate = new DateOnly(2024, 9, 1)
                 },
 
 
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27810"),
-                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7h",
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d73",
                     HotelName = "Hilton",
                     HotelAddress = "Kgs. Nytorv 1",
                     HotelCountry = "Denmark",
@@ -243,14 +243,14 @@ namespace HotelApp.Services.BookingAPI.Data
                         "5d3eafe0-1392-4056-be3b-74d6a6298312",
                         "5d3eafe0-1392-4056-be3b-74d6a6298313"
                     },
-                    CheckInDate = new DateTime(2024, 6, 1),
-                    CheckOutDate = new DateTime(2024, 7, 1)
+                    CheckInDate = new DateOnly(2024, 6, 1),
+                    CheckOutDate = new DateOnly(2024, 7, 1)
                 },
 
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27811"),
-                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7h",
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d73",
                     HotelName = "Hilton",
                     HotelAddress = "Kgs. Nytorv 1",
                     HotelCountry = "Denmark",
@@ -265,15 +265,15 @@ namespace HotelApp.Services.BookingAPI.Data
                         "5d3eafe0-1392-4056-be3b-74d6a6298314",
                         "5d3eafe0-1392-4056-be3b-74d6a6298315"
                     },
-                    CheckInDate = new DateTime(2024, 7, 1),
-                    CheckOutDate = new DateTime(2024, 8, 1)
+                    CheckInDate = new DateOnly(2024, 7, 1),
+                    CheckOutDate = new DateOnly(2024, 8, 1)
                 },
 
 
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27812"),
-                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7i",
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d74",
                     HotelName = "Hotel Eiffel",
                     HotelAddress = "Champs Elysees1",
                     HotelCountry = "France",
@@ -288,14 +288,14 @@ namespace HotelApp.Services.BookingAPI.Data
                         "5d3eafe0-1392-4056-be3b-74d6a6298316",
                         "5d3eafe0-1392-4056-be3b-74d6a6298317"
                     },
-                    CheckInDate = new DateTime(2024, 6, 1),
-                    CheckOutDate = new DateTime(2024, 7, 1)
+                    CheckInDate = new DateOnly(2024, 6, 1),
+                    CheckOutDate = new DateOnly(2024, 7, 1)
                 },
 
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27813"),
-                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7i",
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d74",
                     HotelName = "Hotel Eiffel",
                     HotelAddress = "Champs Elysees1",
                     HotelCountry = "France",
@@ -310,15 +310,15 @@ namespace HotelApp.Services.BookingAPI.Data
                         "5d3eafe0-1392-4056-be3b-74d6a6298318",
                         "5d3eafe0-1392-4056-be3b-74d6a6298319"
                     },
-                    CheckInDate = new DateTime(2024, 7, 1),
-                    CheckOutDate = new DateTime(2024, 8, 1)
+                    CheckInDate = new DateOnly(2024, 7, 1),
+                    CheckOutDate = new DateOnly(2024, 8, 1)
                 },
 
                 // Test for Dormitory that is counts down "Bunks" in the same Dormitory-room
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27814"),
-                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7j",
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d75",
                     HotelName = "Generator Barcelona",
                     HotelAddress = "La Rambla 1",
                     HotelCountry = "Spain",
@@ -335,8 +335,8 @@ namespace HotelApp.Services.BookingAPI.Data
                         "5d3eafe0-1392-4056-be3b-74d6a6298320",
                         "5d3eafe0-1392-4056-be3b-74d6a6298320"
                     },
-                    CheckInDate = new DateTime(2024, 6, 1),
-                    CheckOutDate = new DateTime(2024, 7, 1)
+                    CheckInDate = new DateOnly(2024, 6, 1),
+                    CheckOutDate = new DateOnly(2024, 7, 1)
                 }
 
             };

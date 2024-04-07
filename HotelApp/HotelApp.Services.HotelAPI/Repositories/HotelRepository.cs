@@ -3,6 +3,7 @@ using HotelApp.Services.HotelAPI.Data;
 using HotelApp.Services.HotelAPI.DTOs;
 using HotelApp.Services.HotelAPI.Interfaces;
 using HotelApp.Services.HotelAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace HotelApp.Services.HotelAPI.Repositories
 {
@@ -60,7 +61,7 @@ namespace HotelApp.Services.HotelAPI.Repositories
 
             try
             {
-                var filteredHotels = _db.Hotels.Where(x => x.Country == country);
+                var filteredHotels = _db.Hotels.Include(x => x.Rooms).ThenInclude(x => x.Bed).Where(x => x.Country == country);
 
                 if (!filteredHotels.Any())
                 {
