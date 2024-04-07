@@ -3,7 +3,7 @@
     public class Booking
     {
         public Guid Id { get; set; }
-        public required Guid HotelId { get; set; }
+        public required string HotelId { get; set; }
         // [9] Figure out at last if 'HotelName' and 'HotelAddress' are necessary properties, or if it would be smarter to extract them with 'HotelId'
         public required string HotelName { get; set; }
         public required string HotelAddress { get; set; }

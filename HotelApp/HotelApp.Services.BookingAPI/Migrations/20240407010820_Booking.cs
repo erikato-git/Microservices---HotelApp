@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace HotelApp.Services.BookingAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class booking : Migration
+    public partial class Booking : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -16,6 +16,7 @@ namespace HotelApp.Services.BookingAPI.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    HotelId = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     HotelName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     HotelAddress = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     HotelCountry = table.Column<string>(type: "nvarchar(max)", nullable: false),

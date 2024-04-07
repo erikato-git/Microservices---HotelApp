@@ -1,8 +1,13 @@
-﻿namespace HotelApp.Services.BookingAPI.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace HotelApp.Services.BookingAPI.Models
 {
     public class Booking
     {
+        [Key]
         public Guid Id { get; set; }
+        // OBS: avoid 'Guid' as datatype for 'HotelId', EF will interpret it as an 'unique-identifier'
+        public required string HotelId { get; set; }
         public required string HotelName { get; set; }
         public required string HotelAddress { get; set; }
         public required string HotelCountry { get; set; }

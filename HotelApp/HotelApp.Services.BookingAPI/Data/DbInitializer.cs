@@ -28,6 +28,7 @@ namespace HotelApp.Services.BookingAPI.Data
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27801"),
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7e",
                     HotelName = "Donwtown Hostel",
                     HotelAddress = "Istedgade 1",
                     HotelCountry = "Denmark",
@@ -49,6 +50,7 @@ namespace HotelApp.Services.BookingAPI.Data
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27802"),
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7e",
                     HotelName = "Donwtown Hostel",
                     HotelAddress = "Istedgade 1",
                     HotelCountry = "Denmark",
@@ -70,6 +72,7 @@ namespace HotelApp.Services.BookingAPI.Data
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27803"),
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7e",
                     HotelName = "Donwtown Hostel",
                     HotelAddress = "Istedgade 1",
                     HotelCountry = "Denmark",
@@ -91,6 +94,7 @@ namespace HotelApp.Services.BookingAPI.Data
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27804"),
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7f",
                     HotelName = "The Ritz London",
                     HotelAddress = "PICCADILLY 1",
                     HotelCountry = "England",
@@ -112,6 +116,7 @@ namespace HotelApp.Services.BookingAPI.Data
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27805"),
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7f",
                     HotelName = "The Ritz London",
                     HotelAddress = "PICCADILLY 1",
                     HotelCountry = "England",
@@ -133,6 +138,7 @@ namespace HotelApp.Services.BookingAPI.Data
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27806"),
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7f",
                     HotelName = "The Ritz London",
                     HotelAddress = "PICCADILLY 1",
                     HotelCountry = "England",
@@ -155,6 +161,7 @@ namespace HotelApp.Services.BookingAPI.Data
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27807"),
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7g",
                     HotelName = "Cabinn City",
                     HotelAddress = "Kreuzberg 1",
                     HotelCountry = "Germany",
@@ -176,6 +183,7 @@ namespace HotelApp.Services.BookingAPI.Data
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27808"),
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7g",
                     HotelName = "Cabinn City",
                     HotelAddress = "Kreuzberg 1",
                     HotelCountry = "Germany",
@@ -197,6 +205,7 @@ namespace HotelApp.Services.BookingAPI.Data
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27809"),
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7g",
                     HotelName = "Cabinn City",
                     HotelAddress = "Kreuzberg 1",
                     HotelCountry = "Germany",
@@ -219,6 +228,7 @@ namespace HotelApp.Services.BookingAPI.Data
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27810"),
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7h",
                     HotelName = "Hilton",
                     HotelAddress = "Kgs. Nytorv 1",
                     HotelCountry = "Denmark",
@@ -240,6 +250,7 @@ namespace HotelApp.Services.BookingAPI.Data
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27811"),
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7h",
                     HotelName = "Hilton",
                     HotelAddress = "Kgs. Nytorv 1",
                     HotelCountry = "Denmark",
@@ -262,6 +273,7 @@ namespace HotelApp.Services.BookingAPI.Data
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27812"),
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7i",
                     HotelName = "Hotel Eiffel",
                     HotelAddress = "Champs Elysees1",
                     HotelCountry = "France",
@@ -283,6 +295,7 @@ namespace HotelApp.Services.BookingAPI.Data
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27813"),
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7i",
                     HotelName = "Hotel Eiffel",
                     HotelAddress = "Champs Elysees1",
                     HotelCountry = "France",
@@ -305,6 +318,7 @@ namespace HotelApp.Services.BookingAPI.Data
                 new Booking
                 {
                     Id = Guid.Parse("89aca6c2-ee45-4d84-9654-7280f6e27814"),
+                    HotelId = "bcc20b49-e728-46cf-89e3-afa79e297d7j",
                     HotelName = "Generator Barcelona",
                     HotelAddress = "La Rambla 1",
                     HotelCountry = "Spain",
