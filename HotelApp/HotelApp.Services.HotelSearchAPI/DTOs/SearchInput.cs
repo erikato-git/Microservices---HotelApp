@@ -4,12 +4,9 @@ namespace HotelApp.Services.HotelSearchAPI.DTOs
 {
     public class SearchInput
     {
-        [Required]
-        public int NumberOfPersons { get; set; }
-        [Required]
-        public DateTime CheckInDate { get; set; }
-        [Required]
-        public DateTime CheckOutDate { get; set; }
-        public required string Country { get; set; }
+        public required int NumberOfPersons { get; set; } = 2;
+        public required string CheckInDate { get; set; } = "2024-6-1";
+        public required string CheckOutDate { get; set; } = "2024-6-30";
+        public required string Country { get; set; } = "denmark";
     }
 }

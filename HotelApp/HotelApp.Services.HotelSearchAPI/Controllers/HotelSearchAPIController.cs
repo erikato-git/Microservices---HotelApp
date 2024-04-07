@@ -19,10 +19,10 @@ namespace HotelApp.Services.HotelSearchAPI.Controllers
         }
 
         [HttpGet]
-        [Route("TestSynchronousCommunication")]
-        public async Task<IActionResult> TestSynchronousCommunication()
+        [Route("HotelsSearchResult")]
+        public async Task<IActionResult> HotelsSearchResult([FromQuery]SearchInput searchInput)
         {
-            var result = await _hotelSearchAPI_Repository.TestSynchronization();
+            var result = await _hotelSearchAPI_Repository.HotelsSearchResult(searchInput);
 
             if (result.IsSucces)
             {
@@ -31,5 +31,6 @@ namespace HotelApp.Services.HotelSearchAPI.Controllers
 
             return BadRequest(result.Message);
         }
+
     }
 }

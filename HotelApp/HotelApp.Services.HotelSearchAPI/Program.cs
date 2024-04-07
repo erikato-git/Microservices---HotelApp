@@ -3,6 +3,7 @@ using HotelApp.Services.HotelSearchAPI.Repositories;
 using HotelApp.Services.HotelSearchAPI.Service;
 using HotelApp.Services.HotelSearchAPI.Service.IService;
 using HotelApp.Services.HotelSearchAPI.Util;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +20,10 @@ builder.Services.AddScoped<IHotelSearchAPI_Repository,HotelSearchAPI_Repository>
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SchemaFilter<DateOnlySchemaFilter>();
+});
 
 var app = builder.Build();
 

@@ -17,13 +17,34 @@ namespace HotelApp.Services.HotelSearchAPI.Repositories
             _response = new ResponseDTO();
         }
 
-        public async Task<ResponseDTO> TestSynchronization()
+        public async Task<ResponseDTO> HotelsSearchResult(SearchInput searchInput)
         {
+            /*
+             * The Synchronous communication violates the princple in microservices that each services should be autonomous.
+             * [8] Consider to use an asynchronous communication solution 
+             */
+
+            string[] CheckInDateItems = searchInput.CheckInDate.Split('-');
+            string[] CheckOutDateItems = searchInput.CheckOutDate.Split('-');
+
+            try
+            {
+                DateOnly CheckInDate = new DateOnly(int.Parse(CheckInDateItems[2]), int.Parse(CheckInDateItems[1]), int.Parse(CheckInDateItems[0]));
+                DateOnly CheckOutDate = new DateOnly(int.Parse(CheckOutDateItems[2]), int.Parse(CheckOutDateItems[1]), int.Parse(CheckOutDateItems[0]));
+            }
+            catch (Exception ex)
+            {
+                _response.Message = ex.Message;
+            }
+
+
             var bookings = await _bookingAPI.GetBookingsByCountry("denmark");
             var hotels = await _hotelAPI.GetHotelsByCountry("denmark");
 
-            // TODO: Begin at implementing Search-functionality from Neil's example
+            // If I test with 'searchInput' data within 01.06.2024 to 01.07.2024 for 'Downtown Hostel, Istedgade 1'
+            // I should only be able to see rooms of 'DoubleRoom' and 'Dormitories'
 
+            // if hotels match 
 
             _response.Result = bookings;
 
