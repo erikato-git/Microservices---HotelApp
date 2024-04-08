@@ -57,6 +57,8 @@ static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
         .Or<HttpRequestException>()
         .RetryAsync(5);
 }
+// [7.1] If only Admin and HotelSearchAPI should be allowed to access all bookings, find out what policy to implement for that
+
 
 static IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy()
 {
