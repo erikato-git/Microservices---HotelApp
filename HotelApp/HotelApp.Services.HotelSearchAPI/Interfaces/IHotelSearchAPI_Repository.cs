@@ -4,7 +4,7 @@ namespace HotelApp.Services.HotelSearchAPI.Interfaces
 {
     public interface IHotelSearchAPI_Repository
     {
-        Task<ResponseDTO> HotelsSearchResult(SearchInput searchInput);
+        Task<ResponseDTO> HotelsSearchResult(SearchInput searchInput, PaginationSettings paginationSettings);
 
     }
 }

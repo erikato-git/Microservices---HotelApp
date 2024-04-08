@@ -20,9 +20,9 @@ namespace HotelApp.Services.HotelSearchAPI.Controllers
 
         [HttpGet]
         [Route("HotelsSearchResult")]
-        public async Task<IActionResult> HotelsSearchResult([FromQuery]SearchInput searchInput)
+        public async Task<IActionResult> HotelsSearchResult([FromQuery]SearchInput searchInput, [FromQuery]PaginationSettings paginationSettings)
         {
-            var result = await _hotelSearchAPI_Repository.HotelsSearchResult(searchInput);
+            var result = await _hotelSearchAPI_Repository.HotelsSearchResult(searchInput, paginationSettings);
 
             if (result.IsSucces)
             {

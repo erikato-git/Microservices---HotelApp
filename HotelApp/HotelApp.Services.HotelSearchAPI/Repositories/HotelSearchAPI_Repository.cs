@@ -18,7 +18,7 @@ namespace HotelApp.Services.HotelSearchAPI.Repositories
             _response = new ResponseDTO();
         }
 
-        public async Task<ResponseDTO> HotelsSearchResult(SearchInput searchInput)
+        public async Task<ResponseDTO> HotelsSearchResult(SearchInput searchInput, PaginationSettings paginationSettings)
         {
             /*
              * The Synchronous communication violates the princple in microservices that each services should be autonomous.
@@ -45,9 +45,9 @@ namespace HotelApp.Services.HotelSearchAPI.Repositories
 
                 // [10] Find a more performance effective way to find if two elements in two list match each other than O^2 time
                 /*  
-                 *  1. Find if hotel-id match with a hotel-id in booking, 2. Check if 'CheckInDate' and 'CheckOutDate' for the booking item
-                 *  are in between 'CheckInDate' and 'CheckOutDate' from user input, 3. true: then the RoomIds from the booking-item will be
-                 *  loaded to a list of RoomIds that have to be removed in the response of hotels to the user
+                 *  1. Find if hotel-id match with a hotel-id in booking, 2. CheckInDate from user cannot be in between 'CheckInDate' or
+                 *  'CheckOutDate' for a booking that occupies rooms within the time-space, 3. true: then the RoomIds from the booking-item 
+                 *  will be loaded to a list of RoomIds that have to be removed in the response of hotels to the user
                  */
                 foreach (var hotel in hotels)
                 {
@@ -71,10 +71,13 @@ namespace HotelApp.Services.HotelSearchAPI.Repositories
                     // filter out rooms that don't have an id that 'RemoveRooms' contains
                     hotel.Rooms = hotel.Rooms.Where(room => !RemoveRoomsGuid.Contains(room.Id)).ToList();
                     return hotel;
-                }).ToList();
+                });
 
                 _response.IsSucces = true;
-                _response.Result = HotelsWithOnlyAvailableRooms;
+                _response.Result = HotelsWithOnlyAvailableRooms
+                    .Skip((paginationSettings.Page - 1) * paginationSettings.PageSize)
+                    .Take(paginationSettings.PageSize)
+                    .ToList();
 
             }
             catch (Exception ex)
